@@ -4,120 +4,217 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Smart Village – राह भारत को विश्व गुरु बनाने की</title>
+<title>Smart Village - राह भारत को विश्व गुरु बनाने की</title>
 
 <style>
 *{
   box-sizing:border-box;
 }
 
-body{
+html,body{
   margin:0;
-  font-family:Arial,"Noto Sans Devanagari",sans-serif;
-  background:linear-gradient(135deg,#e8f5e9,#e3f2fd);
-  color:#17351f;
+  padding:0;
+  width:100%;
+  min-height:100%;
 }
 
+body{
+  font-family:Arial,"Noto Sans Devanagari",sans-serif;
+  background:#eaf8f4;
+  color:#17351f;
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+
+/* HEADER */
 header{
-  background:linear-gradient(135deg,#087f23,#16a34a,#0ea5a5);
+  background:linear-gradient(135deg,#078b38,#13b49a);
   color:white;
   text-align:center;
-  padding:55px 20px;
+  padding:55px 18px 60px;
 }
 
-header h1{
-  font-size:38px;
-  margin:0 0 15px;
-}
-
-header p{
-  font-size:20px;
-  margin:8px 0;
-}
-
-.container{
-  max-width:900px;
-  margin:auto;
-  padding:25px 18px;
-}
-
-.card{
-  background:white;
-  margin:22px 0;
-  padding:28px;
-  border-radius:22px;
-  box-shadow:0 8px 25px rgba(0,0,0,.12);
-}
-
-.hero{
-  text-align:center;
-}
-
-.icon{
+.logo{
   font-size:70px;
   margin-bottom:10px;
 }
 
-h2{
-  color:#087f23;
-  font-size:28px;
+h1{
+  font-size:44px;
+  margin:10px 0;
 }
 
+.tagline{
+  font-size:24px;
+  margin:15px 0;
+}
+
+.english{
+  font-size:20px;
+  margin-top:15px;
+}
+
+/* MAIN */
+.container{
+  width:92%;
+  max-width:1000px;
+  margin:35px auto;
+}
+
+/* CARD */
+.card{
+  background:white;
+  border-radius:24px;
+  padding:30px 22px;
+  margin-bottom:28px;
+  box-shadow:0 8px 25px rgba(0,0,0,.10);
+  text-align:center;
+}
+
+.card h2{
+  color:#078b38;
+  font-size:30px;
+  margin-top:0;
+}
+
+.card p{
+  font-size:18px;
+  line-height:1.8;
+}
+
+/* FEATURES */
 .features{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:15px;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
 }
 
 .feature{
-  background:#f0fdf4;
-  border:1px solid #bbf7d0;
-  border-radius:16px;
-  padding:20px;
+  background:#f4fff9;
+  border:2px solid #d5f0df;
+  border-radius:18px;
+  padding:22px 12px;
   text-align:center;
-  font-size:18px;
 }
 
+.feature-icon{
+  font-size:40px;
+}
+
+.feature h3{
+  color:#087f38;
+  margin:10px 0;
+}
+
+/* PRICE */
 .price{
-  text-align:center;
   font-size:42px;
   font-weight:bold;
-  color:#7c3aed;
-  margin:20px 0;
+  color:#078b38;
+  margin:15px 0;
 }
 
-.buy{
-  display:block;
-  width:100%;
-  max-width:420px;
-  margin:20px auto;
-  padding:18px;
-  background:linear-gradient(135deg,#7c3aed,#5b21b6);
+.buy-btn{
+  display:inline-block;
+  background:linear-gradient(135deg,#087f38,#13b49a);
   color:white;
   text-decoration:none;
-  text-align:center;
-  border-radius:14px;
   font-size:22px;
   font-weight:bold;
-  box-shadow:0 7px 18px rgba(91,33,182,.3);
+  padding:16px 38px;
+  border-radius:50px;
+  box-shadow:0 7px 18px rgba(0,0,0,.18);
 }
 
-.buy:hover{
-  transform:scale(1.02);
+.buy-btn:active{
+  transform:scale(.97);
 }
 
-.note{
-  text-align:center;
-  color:#555;
-  font-size:14px;
+/* INFO */
+.info{
+  text-align:left;
 }
 
+.info li{
+  font-size:18px;
+  line-height:2;
+  margin-bottom:5px;
+}
+
+/* FOOTER */
 footer{
-  text-align:center;
-  background:#12351d;
+  background:#063d25;
   color:white;
-  padding:25px;
-  margin-top:30px;
+  text-align:center;
+  padding:30px 15px;
+  margin-top:40px;
+}
+
+footer p{
+  margin:8px 0;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+
+  header{
+    padding:40px 15px 45px;
+  }
+
+  .logo{
+    font-size:55px;
+  }
+
+  h1{
+    font-size:36px;
+  }
+
+  .tagline{
+    font-size:21px;
+  }
+
+  .english{
+    font-size:17px;
+  }
+
+  .container{
+    width:94%;
+    margin:25px auto;
+  }
+
+  .card{
+    padding:25px 16px;
+  }
+
+  .card h2{
+    font-size:27px;
+  }
+
+  .card p{
+    font-size:17px;
+  }
+
+  .features{
+    grid-template-columns:1fr;
+  }
+
+  .feature{
+    padding:20px 12px;
+  }
+
+  .price{
+    font-size:38px;
+  }
+
+  .buy-btn{
+    width:90%;
+    font-size:20px;
+    padding:15px 10px;
+  }
+
+  .info li{
+    font-size:17px;
+  }
 }
 </style>
 </head>
@@ -125,17 +222,187 @@ footer{
 <body>
 
 <header>
-  <div class="icon">🌱🏡📱</div>
+
+  <div class="logo">🌱 🏠 📱</div>
+
   <h1>Smart Village</h1>
-  <p>राह भारत को विश्व गुरु बनाने की</p>
-  <p>Clean • Green • Self-Reliant India</p>
+
+  <div class="tagline">
+    राह भारत को विश्व गुरु बनाने की
+  </div>
+
+  <div class="english">
+    Clean • Green • Self-Reliant India
+  </div>
+
 </header>
 
-<div class="container">
 
-  <div class="card hero">
-    <h2>स्मार्ट विलेज ई-बुक</h2>
+<main class="container">
+
+  <!-- EBOOK INTRO -->
+  <section class="card">
+
+    <h2>📖 स्मार्ट विलेज ई-बुक</h2>
 
     <p>
       भारत के गांवों को आधुनिक, आत्मनिर्भर, स्वच्छ और
-      तकनीकी रूप से सक्षम बनाने की
+      तकनीकी रूप से सक्षम बनाने की दिशा में एक व्यावहारिक पहल।
+    </p>
+
+    <p>
+      इस ई-बुक में Smart Village की अवधारणा,
+      ग्रामीण विकास, शिक्षा, कृषि, रोजगार, डिजिटल तकनीक
+      और आत्मनिर्भर गांव की दिशा को सरल रूप में समझाया गया है।
+    </p>
+
+  </section>
+
+
+  <!-- FEATURES -->
+  <section class="card">
+
+    <h2>🌟 स्मार्ट विलेज की प्रमुख विशेषताएँ</h2>
+
+    <div class="features">
+
+      <div class="feature">
+        <div class="feature-icon">🎓</div>
+        <h3>स्मार्ट शिक्षा</h3>
+        <p>डिजिटल शिक्षा और आधुनिक शिक्षण व्यवस्था।</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">🌾</div>
+        <h3>स्मार्ट कृषि</h3>
+        <p>तकनीक आधारित खेती और किसानों की आय में वृद्धि।</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">☀️</div>
+        <h3>सौर ऊर्जा</h3>
+        <p>स्वच्छ एवं नवीकरणीय ऊर्जा का उपयोग।</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">💧</div>
+        <h3>जल संरक्षण</h3>
+        <p>वर्षा जल संचयन और सुरक्षित पेयजल व्यवस्था।</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">🏥</div>
+        <h3>स्वास्थ्य सुविधा</h3>
+        <p>गांव के लोगों के लिए बेहतर स्वास्थ्य सेवाएँ।</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">💼</div>
+        <h3>रोजगार</h3>
+        <p>स्थानीय स्तर पर रोजगार और स्वरोजगार के अवसर।</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">📱</div>
+        <h3>डिजिटल गांव</h3>
+        <p>डिजिटल सेवाओं और इंटरनेट की बेहतर पहुंच।</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">🌳</div>
+        <h3>स्वच्छ एवं हरित गांव</h3>
+        <p>स्वच्छता, हरियाली और पर्यावरण संरक्षण।</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EBOOK DETAILS -->
+  <section class="card info">
+
+    <h2>📚 इस ई-बुक में क्या मिलेगा?</h2>
+
+    <ul>
+      <li>Smart Village की पूरी अवधारणा</li>
+      <li>गांव के आधुनिक विकास की योजना</li>
+      <li>स्मार्ट शिक्षा और डिजिटल सेवाएँ</li>
+      <li>किसानों के लिए आधुनिक कृषि व्यवस्था</li>
+      <li>स्वच्छ पानी और जल संरक्षण</li>
+      <li>सौर ऊर्जा एवं हरित ऊर्जा</li>
+      <li>ग्रामीण रोजगार और आत्मनिर्भरता</li>
+      <li>स्वच्छ, सुरक्षित और आधुनिक गांव की दिशा</li>
+    </ul>
+
+  </section>
+
+
+  <!-- PAYMENT -->
+  <section class="card">
+
+    <h2>📖 Smart Village ई-बुक प्राप्त करें</h2>
+
+    <p>
+      ई-बुक की कीमत
+    </p>
+
+    <div class="price">₹49</div>
+
+    <p>
+      नीचे दिए गए बटन पर क्लिक करके सुरक्षित भुगतान करें।
+    </p>
+
+    <a
+      class="buy-btn"
+      href="https://payments.cashfree.com/links?code=xasolc5j6jgg_AAAAAAAVCs"
+      target="_blank"
+      rel="noopener noreferrer">
+      💳 ₹49 में ई-बुक खरीदें
+    </a>
+
+    <p style="font-size:14px;margin-top:20px;">
+      भुगतान Cashfree के माध्यम से होगा।
+    </p>
+
+  </section>
+
+
+  <!-- AUTHOR -->
+  <section class="card">
+
+    <h2>✍️ लेखक</h2>
+
+    <p style="font-size:24px;font-weight:bold;">
+      Brijesh Chauhan
+    </p>
+
+    <p>
+      Smart Village — Clean, Green, Self-Reliant India
+    </p>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <p><strong>Smart Village</strong></p>
+
+  <p>
+    राह भारत को विश्व गुरु बनाने की
+  </p>
+
+  <p>
+    Clean • Green • Self-Reliant India
+  </p>
+
+  <p>
+    © 2026 Smart Village
+  </p>
+
+</footer>
+
+</body>
+</html>
