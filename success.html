@@ -1,12 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<title>Payment Successful</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Payment Successful - Smart Village</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #e8f5e9, #e3f2fd);
+      padding: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 500px;
+      background: white;
+      padding: 40px 25px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+    }
+
+    .success {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      color: #168a3a;
+      margin: 10px 0;
+      font-size: 30px;
+    }
+
+    h2 {
+      color: #222;
+      font-size: 22px;
+      margin-top: 20px;
+    }
+
+    p {
+      color: #555;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .download {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 16px 28px;
+      background: #168a3a;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .download:hover {
+      background: #106b2d;
+    }
+
+    .note {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
 </head>
+
 <body>
-<h1>धन्यवाद! 🎉</h1>
-<p>आपका भुगतान सफल हो गया है।</p>
-<p>आपकी Smart Village ई-बुक जल्द उपलब्ध होगी।</p>
+
+  <div class="card">
+
+    <div class="success">🎉</div>
+
+    <h1>धन्यवाद!</h1>
+
+    <h2>आपका भुगतान सफल हो गया है।</h2>
+
+    <p>
+      Smart Village E-Book खरीदने के लिए धन्यवाद।
+      नीचे दिए गए बटन पर क्लिक करके अपनी ई-बुक प्राप्त करें।
+    </p>
+
+    <a
+      class="download"
+      href="https://pub-c82d5dbc53344ca5a942169d85e01b5a.r2.dev/smart%20village.pdf"
+      target="_blank"
+      rel="noopener"
+    >
+      📖 Smart Village E-Book डाउनलोड करें
+    </a>
+
+    <div class="note">
+      Smart Village – Clean, Green, Self-Reliant India
+    </div>
+
+  </div>
+
 </body>
 </html>
