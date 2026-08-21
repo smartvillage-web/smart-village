@@ -1,113 +1,168 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Payment Successful - Smart Village</title>
+<title>Payment Successful - Smart Village</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<style>
+*{
+  box-sizing:border-box;
+}
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #e8f5e9, #e3f2fd);
-      padding: 20px;
-    }
+body{
+  margin:0;
+  padding:0;
+  font-family:Arial,"Noto Sans Devanagari",sans-serif;
+  background:#fff8ef;
+  color:#3b2415;
+  text-align:center;
+}
 
-    .card {
-      width: 100%;
-      max-width: 500px;
-      background: white;
-      padding: 40px 25px;
-      border-radius: 20px;
-      text-align: center;
-      box-shadow: 0 10px 35px rgba(0,0,0,0.15);
-    }
+.container{
+  width:92%;
+  max-width:600px;
+  margin:50px auto;
+}
 
-    .success {
-      font-size: 60px;
-      margin-bottom: 10px;
-    }
+.card{
+  background:white;
+  border-radius:25px;
+  padding:35px 22px;
+  box-shadow:0 8px 30px rgba(120,70,20,.15);
+}
 
-    h1 {
-      color: #168a3a;
-      margin: 10px 0;
-      font-size: 30px;
-    }
+.success-icon{
+  font-size:75px;
+  margin-bottom:10px;
+}
 
-    h2 {
-      color: #222;
-      font-size: 22px;
-      margin-top: 20px;
-    }
+h1{
+  color:#e65100;
+  font-size:36px;
+  margin:10px 0 20px;
+}
 
-    p {
-      color: #555;
-      font-size: 17px;
-      line-height: 1.6;
-    }
+.message{
+  font-size:20px;
+  line-height:1.7;
+}
 
-    .download {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 16px 28px;
-      background: #168a3a;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      font-size: 18px;
-      font-weight: bold;
-    }
+.book{
+  background:#fff3e0;
+  border:2px solid #ffcc80;
+  border-radius:18px;
+  padding:20px;
+  margin:25px 0;
+}
 
-    .download:hover {
-      background: #106b2d;
-    }
+.book h2{
+  color:#e65100;
+  margin:0 0 10px;
+}
 
-    .note {
-      margin-top: 20px;
-      font-size: 14px;
-      color: #777;
-    }
-  </style>
+.download-btn{
+  display:inline-block;
+  width:90%;
+  max-width:400px;
+  background:linear-gradient(135deg,#e65100,#ff9800);
+  color:white;
+  text-decoration:none;
+  font-size:21px;
+  font-weight:bold;
+  padding:17px 20px;
+  border-radius:50px;
+  box-shadow:0 7px 18px rgba(120,70,20,.25);
+}
+
+.note{
+  font-size:14px;
+  color:#666;
+  margin-top:20px;
+  line-height:1.6;
+}
+
+footer{
+  margin-top:30px;
+  color:#8d3b00;
+  font-size:14px;
+}
+
+@media(max-width:600px){
+
+  .container{
+    margin:30px auto;
+  }
+
+  .card{
+    padding:30px 17px;
+  }
+
+  h1{
+    font-size:31px;
+  }
+
+  .message{
+    font-size:18px;
+  }
+
+  .download-btn{
+    width:95%;
+    font-size:19px;
+  }
+}
+</style>
 </head>
 
 <body>
 
+<div class="container">
+
   <div class="card">
 
-    <div class="success">🎉</div>
+    <div class="success-icon">✅</div>
 
-    <h1>धन्यवाद!</h1>
+    <h1>भुगतान सफल हुआ!</h1>
 
-    <h2>आपका भुगतान सफल हो गया है।</h2>
-
-    <p>
-      Smart Village E-Book खरीदने के लिए धन्यवाद।
-      नीचे दिए गए बटन पर क्लिक करके अपनी ई-बुक प्राप्त करें।
+    <p class="message">
+      धन्यवाद! आपका <strong>Smart Village ई-बुक</strong>
+      भुगतान सफलतापूर्वक पूरा हो गया है।
     </p>
 
+    <div class="book">
+
+      <h2>📖 Smart Village E-Book</h2>
+
+      <p>
+        आपकी ई-बुक अब डाउनलोड करने के लिए उपलब्ध है।
+      </p>
+
+    </div>
+
     <a
-      class="download"
+      class="download-btn"
       href="https://pub-c82d5dbc53344ca5a942169d85e01b5a.r2.dev/smart%20village.pdf"
       target="_blank"
-      rel="noopener"
-    >
-      📖 Smart Village E-Book डाउनलोड करें
+      rel="noopener noreferrer"
+      download>
+      📥 Smart Village PDF डाउनलोड करें
     </a>
 
-    <div class="note">
-      Smart Village – Clean, Green, Self-Reliant India
-    </div>
+    <p class="note">
+      बटन दबाने के बाद PDF खुलेगी। वहाँ से आप उसे
+      अपने मोबाइल में डाउनलोड या सेव कर सकते हैं।
+    </p>
 
   </div>
 
+  <footer>
+    <strong>Smart Village</strong><br>
+    राह भारत को विश्व गुरु बनाने की<br>
+    Clean • Green • Self-Reliant India
+  </footer>
+
+</div>
+
 </body>
-</html>
+  </html>
